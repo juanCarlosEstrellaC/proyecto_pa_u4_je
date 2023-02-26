@@ -38,6 +38,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>uce.gob.ec.avanzada</groupId>
+			<artifactId>ejercicio_u3_pa_p3_je</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
