@@ -40,7 +40,7 @@
 		</dependency>
 		<dependency>
 			<groupId>uce.gob.ec.avanzada</groupId>
-			<artifactId>ejercicio_u3_pa_p3_je</artifactId>
+			<artifactId>proyecto_pa_u4_jec</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
