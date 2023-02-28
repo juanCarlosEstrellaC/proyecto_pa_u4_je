@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
@@ -29,6 +30,10 @@ public class Ciudadano {
 	@Column(name = "ciud_fecha_nacimiento")
 	private LocalDateTime fechaNacimiento;
 
+	@OneToOne(mappedBy = "miCiudadano")
+	private Estudiante miEstudiante;
+	
+	
 	@Override
 	public String toString() {
 		return "Ciudadano [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento="

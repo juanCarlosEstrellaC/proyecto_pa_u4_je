@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
@@ -24,6 +26,11 @@ public class Estudiante {
 	@Column(name = "estu_edad")
 	private Integer edad;
 
+	
+	@OneToOne
+	@JoinColumn(name = "estu_id_ciud")
+	private Ciudadano miCiudadano;
+	
 	@Override
 	public String toString() {
 		return "Estudiante [id=" + id + ", nombreCompleto=" + nombreCompleto + ", edad=" + edad + "]";

@@ -19,7 +19,7 @@ public class MainParaleloStream {
 		
 		// Procesar cada estudiante
 		long tiempoInicial = System.currentTimeMillis();
-		List<String> listaFinal = idEstudiantes.parallelStream().map(id -> procesarIdEstudiante(id))
+		List<String> listaFinal = idEstudiantes.stream().map(id -> procesarIdEstudiante(id))
 				.collect(Collectors.toList());
 		long tiempoFinal = System.currentTimeMillis();
 		long tiempoTranscurrido = (tiempoFinal-tiempoInicial)/1000;

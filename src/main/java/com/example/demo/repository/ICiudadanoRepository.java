@@ -1,9 +1,11 @@
 package com.example.demo.repository;
 
-import com.example.demo.funcional.Ciudadano;
+import java.util.List;
+
+import com.example.demo.modelo.Ciudadano;
 
 public interface ICiudadanoRepository {
 
-	public void insertar(Ciudadano ciudadano);
+	public List<Ciudadano> consultarTodos();
 	
 }
